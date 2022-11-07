@@ -6,23 +6,26 @@
     box-sizing: border-box;
 }
 
-body {
+header {
     width: 100%;
-    height: 100%;
+    height: 1000px;
     background-color: rgba(27, 146, 250, 0.137);
     background-image: url("./images/XXXL.jpg");
     background-size: cover;
-
+    background-repeat: no-repeat;
 }
 
-header h1 {
+.search-doctor {
     text-align: center;
     font-weight: 700;
     font-size: 60px;
     color: #00a85f;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
+    position: absolute;
     margin-top: 10%;
+    margin-left: 620px;
+    
 }
 
 .search {
@@ -87,7 +90,6 @@ header h1 {
     font-weight: 900;
     letter-spacing: 1.5px;
     font-size: 72px;
-
 }
 
 .input:hover {
@@ -98,4 +100,148 @@ header h1 {
 input:focus {
     border: none;
     outline: none;
+}
+
+.doctors-section{
+    width: 100%;
+    height : 1000px;
+}
+.doctors-section {
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(27, 146, 250, 0.137);
+    background-image: url("./images/backgrounds_medical.jpg");
+    background-size: 100%;
+    background-repeat:no-repeat;
+}
+
+.doctors-section-title{
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 60px;
+    color: #00a85f;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    
+}
+.doctors-section-title-border{
+    border: 1px solid rgb(90, 69, 140);
+    width:  820px;
+    border-radius: 20px;
+    margin-left: 540px;
+}
+.doctors-card{
+    width: 1200px;
+    height: 550px;
+    margin: auto;
+    margin-top: 150px;
+}
+.card-doctor{
+    width: 600px;
+    height: 250px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 120px;
+    position: absolute;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background: #1e3c72;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card-hospital{
+    width: 600px;
+    height: 250px;
+    border-radius: 20px;
+    margin-left: 650px;
+    margin-top: 120px;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background: #1e3c72;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.doctor-img{
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    background: rgb(55, 47, 79);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 20px;
+    margin-left: -200px;
+    margin-top: -325px;
+}
+
+.doctor-img img{
+    width: 100%;
+    height: 100%;
+}
+.doctor-details{
+    text-align: center;
+    padding: 20px;
+    color: #f1f6f4;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin-left: -100px;
+}
+.doctor-detials-all{
+    font-size: 16px;
+    font-weight: 400;
+    word-spacing: 2px;
+    font-style: italic;
+    font-family: 'Roboto';
+    margin-left: 20px;
+    line-height: 25px;
+    color: whitesmoke;
+}
+
+.hospital-details{
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px;
+    color: #f1f6f4;
+    margin-left: 70px;
+}
+.hospital-detials-all{
+    font-size: 16px;
+    font-weight: 400;
+    word-spacing: 2px;
+    font-style: italic;
+    font-family: 'Roboto';
+    margin-left: 120px;
+    line-height: 25px;
+    margin-top: -10px;
+    color: whitesmoke;
+}
+
+.click-area{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: -100px;
+}
+.click-area li.active{
+    list-style-type: none;
+    width: 30px;
+    height: 10px;
+    background: rgb(90, 69, 140);
+    float: left;
+    border-radius: 80px;
+    margin-right: 10px;
+    margin-top: 2px;
+    transition: 0.3s;
+}
+.click-area li.others{
+    list-style-type: none;
+    width: 10px;
+    height: 10px;
+    background: rgb(90, 69, 140);
+    border-radius: 100%;
+    float: left;
+    padding: 7px;
+    cursor: pointer;
+    margin-right: 10px;
 }
